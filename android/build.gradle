@@ -3,7 +3,7 @@
 buildscript {
     ext {
         buildToolsVersion = "30.0.2"
-        minSdkVersion = 21
+        minSdkVersion = 24
         compileSdkVersion = 30
         targetSdkVersion = 30
         ndkVersion = "21.4.7075529"
@@ -11,6 +11,12 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        jcenter() {
+                content {
+                includeModule("org.webrtc", "google-webrtc")
+                includeModule("com.getkeepsafe.relinker", "relinker")
+             }
+        }
     }
     dependencies {
         classpath("com.android.tools.build:gradle:4.2.2")
@@ -38,5 +44,6 @@ allprojects {
         }
         google()
         maven { url 'https://www.jitpack.io' }
+        jcenter()
     }
 }

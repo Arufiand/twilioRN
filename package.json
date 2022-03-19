@@ -20,7 +20,8 @@
     "react-native-permissions": "^3.3.1",
     "react-native-reanimated": "^2.4.1",
     "react-native-safe-area-context": "^4.2.1",
-    "react-native-screens": "^3.13.1"
+    "react-native-screens": "^3.13.1",
+    "react-native-twilio-video-webrtc": "github:blackuy/react-native-twilio-video-webrtc"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
